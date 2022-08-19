@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js"></script>
     <title>JavaScript Calculator</title>
 </head>
 <body>
     <main>
         <div id="container">
             <div id="calculator">
-                <div id="display"></div>
+                <div id="display">0</div>
                 <div id="formula">0</div>
                 <table>
                     <tr>
@@ -18,60 +19,60 @@
                             <button id="clear">AC</button>
                         </td>
                         <td>
-                            <button id="divide">/</button>
+                            <button onclick="insertNum('/')" id="divide">/</button>
                         </td>
                         <td>
-                            <button id="multiply">*</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button id="seven">7</button>
-                        </td>
-                        <td>
-                            <button id="eight">8</button>
-                        </td>
-                        <td>
-                            <button id="nine">9</button>
-                        </td>
-                        <td>
-                            <button id="subtract">-</button>
+                            <button onclick="insertNum('*')"  id="multiply">*</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button id="four">4</button>
+                            <button onclick="insertNum(7)"  id="seven">7</button>
                         </td>
                         <td>
-                            <button id="five">5</button>
+                            <button onclick="insertNum(8)"  id="eight">8</button>
                         </td>
                         <td>
-                            <button id="six">6</button>
+                            <button onclick="insertNum(9)"  id="nine">9</button>
                         </td>
                         <td>
-                            <button id="add">+</button>
+                            <button onclick="insertNum('-')"  id="subtract">-</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button id="one">1</button>
+                            <button onclick="insertNum(4)"  id="four">4</button>
                         </td>
                         <td>
-                            <button id="two">2</button>
+                            <button onclick="insertNum(5)"  id="five">5</button>
                         </td>
                         <td>
-                            <button id="three">3</button>
+                            <button onclick="insertNum(6)"  id="six">6</button>
+                        </td>
+                        <td>
+                            <button onclick="insertNum('+')"  id="add">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="insertNum(1)"  id="one">1</button>
+                        </td>
+                        <td>
+                            <button onclick="insertNum(2)"  id="two">2</button>
+                        </td>
+                        <td>
+                            <button onclick="insertNum(3)"  id="three">3</button>
                         </td>
                         <td rowspan="2">
-                            <button id="equals">=</button>
+                            <button onclick="resultado()"  id="equals">=</button>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button id="zero">0</button>
+                            <button onclick="insertNum(0)"  id="zero">0</button>
                         </td>
                         <td>
-                            <button id="decimal">.</button>
+                            <button onclick="insertNum('.')"  id="decimal">.</button>
                         </td>
                     </tr>
                 </table>
