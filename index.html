@@ -16,63 +16,63 @@
                 <table>
                     <tr>
                         <td colspan="2">
-                            <button id="clear">AC</button>
+                            <button data-clear id="clear">AC</button>
                         </td>
                         <td>
-                            <button onclick="insertNum('/')" id="divide">/</button>
+                            <button data-operation id="divide">/</button>
                         </td>
                         <td>
-                            <button onclick="insertNum('*')"  id="multiply">*</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button onclick="insertNum(7)"  id="seven">7</button>
-                        </td>
-                        <td>
-                            <button onclick="insertNum(8)"  id="eight">8</button>
-                        </td>
-                        <td>
-                            <button onclick="insertNum(9)"  id="nine">9</button>
-                        </td>
-                        <td>
-                            <button onclick="insertNum('-')"  id="subtract">-</button>
+                            <button data-operation  id="multiply">*</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button onclick="insertNum(4)"  id="four">4</button>
+                            <button data-number id="seven">7</button>
                         </td>
                         <td>
-                            <button onclick="insertNum(5)"  id="five">5</button>
+                            <button data-number id="eight">8</button>
                         </td>
                         <td>
-                            <button onclick="insertNum(6)"  id="six">6</button>
+                            <button data-number id="nine">9</button>
                         </td>
                         <td>
-                            <button onclick="insertNum('+')"  id="add">+</button>
+                            <button data-operation id="subtract">-</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button onclick="insertNum(1)"  id="one">1</button>
+                            <button data-number id="four">4</button>
                         </td>
                         <td>
-                            <button onclick="insertNum(2)"  id="two">2</button>
+                            <button data-number id="five">5</button>
                         </td>
                         <td>
-                            <button onclick="insertNum(3)"  id="three">3</button>
+                            <button data-number id="six">6</button>
+                        </td>
+                        <td>
+                            <button data-operation  id="add">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button data-number id="one">1</button>
+                        </td>
+                        <td>
+                            <button data-number id="two">2</button>
+                        </td>
+                        <td>
+                            <button data-number id="three">3</button>
                         </td>
                         <td rowspan="2">
-                            <button onclick="resultado()"  id="equals">=</button>
+                            <button data-equals  id="equals">=</button>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button onclick="insertNum(0)"  id="zero">0</button>
+                            <button data-number id="zero">0</button>
                         </td>
                         <td>
-                            <button onclick="insertNum('.')"  id="decimal">.</button>
+                            <button data-number  id="decimal">.</button>
                         </td>
                     </tr>
                 </table>
